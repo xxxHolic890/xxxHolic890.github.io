@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerging Technology Research | Gustavo's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cyber.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Gustavo's Cybersecurity Portfolio</a>
+            <button class="hamburger" aria-expanded="false" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link hover-glow">Home</a></li>
+                <li><a href="Academics.html" class="nav-link hover-glow">Academics</a></li>
+                <li><a href="FutureCareers.html" class="nav-link hover-glow">Career Goals</a></li>
+                <li><a href="BeyondHCC.html" class="nav-link hover-glow">My Passion</a></li>
+                <li><a href="citedwork.html" class="nav-link hover-glow">Cited Work</a></li>
+                <li><a href="EmergingTech.html" class="nav-link hover-glow">Emerging Tech</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="tech-container">
+        <header class="tech-header">
+            <h1>Artificial Intelligence in Cybersecurity</h1>
+            <p class="subtitle">Exploring AI's transformative role in digital defense</p>
+        </header>
+
+        <section class="tech-section">
+            <h2>Emerging Technology Overview</h2>
+            <div class="tech-content">
+                <p>Artificial Intelligence (AI) in cybersecurity refers to machine learning systems that can analyze patterns, detect anomalies, and respond to threats in real-time. Modern AI security tools can process billions of data points to identify potential attacks that would be impossible for humans to detect manually.</p>
+                <p>Current applications range from behavioral analysis to predictive threat modeling, with new advancements emerging in generative AI for security testing and AI-powered automated remediation systems.</p>
+            </div>
+            <img src="images/ai-security.jpg" alt="AI analyzing network security patterns" class="tech-image">
+        </section>
+
+        <section class="tech-section">
+            <h2>Applications in Cybersecurity</h2>
+            <div class="tech-content">
+                <ul class="applications-list">
+                    <li><strong>Threat Detection:</strong> AI analyzes network traffic to identify suspicious patterns and zero-day attacks</li>
+                    <li><strong>Phishing Prevention:</strong> Natural Language Processing (NLP) detects malicious emails with 99%+ accuracy</li>
+                    <li><strong>Automated Response:</strong> AI systems can automatically isolate compromised endpoints</li>
+                    <li><strong>Vulnerability Management:</strong> Predicts which system weaknesses are most likely to be exploited</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="tech-section highlight">
+            <h2>My Implementation Plan</h2>
+            <div class="tech-content">
+                <ol class="implementation-steps">
+                    <li>Complete specialized coursework in machine learning for cybersecurity</li>
+                    <li>Obtain certifications in AI security tools (Darktrace, IBM Watson for Cyber Security)</li>
+                    <li>Develop Python scripts leveraging TensorFlow for threat analysis</li>
+                    <li>Participate in AI security research projects at university labs</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="tech-section">
+            <h2>Career Alignment</h2>
+            <div class="tech-content">
+                <p>AI expertise will be crucial for my goal to become a Security Operations Center (SOC) Analyst and eventually a Threat Intelligence Specialist. The cybersecurity field is experiencing:</p>
+                <ul>
+                    <li>300% growth in AI security job postings (2023 Cybersecurity Workforce Report)</li>
+                    <li>Average salary premium of 20-30% for AI-skilled security professionals</li>
+                    <li>Increasing demand in financial, healthcare, and government sectors</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="tech-section">
+            <h2>Why AI Excites Me</h2>
+            <div class="tech-content">
+                <p>I'm fascinated by AI's potential to stay ahead of evolving cyber threats. The ability to:</p>
+                <ul>
+                    <li>Process security data at machine speed</li>
+                    <li>Learn and adapt to new attack patterns</li>
+                    <li>Automate routine security tasks</li>
+                </ul>
+                <p>aligns perfectly with my interest in cutting-edge security solutions. I'm particularly intrigued by adversarial AI - where security systems must both use AI and defend against AI-powered attacks.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="research-footer">
+        <p>Research conducted by Gustavo De Paz | Last updated: <time id="current-date"></time></p>
+        <p>Connect with me: 
+            <a href="#" class="social-link">LinkedIn</a> | 
+            <a href="#" class="social-link">GitHub</a>
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/navigation.js"></script>
+    <script>
+        // Update current date
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>
