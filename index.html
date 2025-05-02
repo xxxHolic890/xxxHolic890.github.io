@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Career Fields | Gustavo's Portfolio</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/cyber.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar with Glow Effect -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo glow-text">Gustavo's Cyber Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link hover-glow">Home</a></li>
+                <li><a href="Build/Academics.html" class="nav-link hover-glow">Academics</a></li>
+                <li><a href="Build/FutureCareers.html" class="nav-link hover-glow">Career Goals</a></li>
+                <li><a href="Build/BeyondHCC.html" class="nav-link hover-glow">My Passion</a></li>
+                <li><a href="Build/citedwork.html" class="nav-link hover-glow">Cited Work</a></li>
+                <li><a href="Build/EmergingTech.html" class="nav-link hover-glow">Emerging Tech</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+           
+    </nav>
+
+    <!-- Animated Header Section -->
+    <header class="pulse-background">
+        <h1 id="main-title" class="gradient-text">Welcome to My Cybersecurity Journey</h1>
+        <p class="intro-text glow-text">Exploring the digital frontier through innovation and security</p>
+        <div class="scanline"></div>
+    </header>
+    
+    <main class="cyber-grid">
+        <!-- Profile Card with Hover Effect -->
+        <section class="profile-card floating">
+            <div class="profile-image-container">
+                <img src="images/Me.jpg" class="profile-image" alt="Professional headshot of Gustavo" onerror="this.src='images/placeholder.jpg'">
+                <div class="image-overlay">
+                    <span class="overlay-text">Security Analyst</span>
+                </div>
+            </div>
+            <div class="badge-container">
+                <span class="cyber-badge">CEH</span>
+                <span class="cyber-badge">Security+</span>
+                <span class="cyber-badge">Python</span>
+            </div>
+        </section>
+        
+        <div class="button-container">
+            <a href="Build/Academics.html" class="cta-button pulse-button">
+                View My Academics 
+                <span class="arrow">→</span>
+            </a>
+        </div>
+        </section>
+
+        <!-- Cyber Decoration Elements -->
+        <div class="cyber-circle circle-1"></div>
+        <div class="cyber-circle circle-2"></div>
+        <div class="cyber-line"></div>
+    </main>
+    
+    <!-- Animated Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Gustavo's Cybersecurity Portfolio</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">LinkedIn</a>
+                <a href="#" class="social-icon">GitHub</a>
+                <a href="#" class="social-icon">HackTheBox</a>
+            </div>
+        </div>
+        <div class="footer-globe"></div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/navigation.js" defer></script>
+    <script src="js/darkmode.js" defer></script>
+    <script src="js/skills.js" defer></script>
+    <script>
+        // Automatically update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Add dynamic element (example)
+        document.querySelectorAll('.cyber-badge').forEach(badge => {
+            badge.addEventListener('mouseover', function() {
+                this.style.transform = 'scale(1.2)';
+                this.style.boxShadow = '0 0 15px var(--cyber-blue)';
+            });
+            badge.addEventListener('mouseout', function() {
+                this.style.transform = 'scale(1)';
+                this.style.boxShadow = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
